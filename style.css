@@ -1,0 +1,134 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f9f9f9;
+}
+
+header {
+  background: #0056a1;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #003f7d;
+  display: flex;
+  justify-content: center;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu > li {
+  margin: 0 15px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+.menu a:hover {
+  background: #0073e6;
+}
+
+/* Menu con */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background: #0056a1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.submenu li a {
+  padding: 10px 20px;
+  white-space: nowrap;
+}
+
+.menu li:hover .submenu {
+  display: block;
+}
+
+/* Bố cục chung */
+main {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+  background: white;
+}
+
+.banner {
+  width: 100%;
+  border-radius: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+  background: #fafafa;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+}
+
+input, textarea, button {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #0056a1;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0073e6;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #003f7d;
+  color: white;
+  margin-top: 20px;
+}
+
+
